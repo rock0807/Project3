@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{ 
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+color: white;
+background: #262626;
+}
+
+header {
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 80px;
+padding: 0 20px;
+  }
+.logo{
+ position: absolute;
+width: 159px;
+height: 72px;
+left: 59px;
+top: 27px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+color: #FFFFFF;
+}
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 4px 8px;
+}
+  
+.search-bar input[type="text"] {
+    flex: 1;
+    border: none;
+    margin-right: 8px;
+  }
+  
+.search-bar button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+}
+  
+.buttons {
+    display: flex;
+    align-items: center;
+}
+  
+.buttons button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    margin-left: 8px;
+    cursor: pointer;
+}
+  
+.about-us{
+box-sizing: border-box;
+position: absolute;
+width: 1323px;
+height: 588px;
+left: 59px;
+top: 137px;
+background: #262626;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 50px;
+}
+  
+.reactangle1{
+box-sizing: border-box;
+position: absolute;
+width: 1323px;
+height: 588px;
+left: 59px;
+top: 137px;
+background: #262626;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 50px;
+}
+
+#login{
+position: absolute;
+width: 134px;
+height: 53px;
+left: 958px;
+top: 33px;
+background: #262626;
+border-radius: 15px;
+}
+
+#c1{
+position: absolute;
+width: 846px;
+height: 53px;
+left: 224px;
+top: 293px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 48px;
+color: #C4C4C4;
+}
+#c2{
+position: absolute;
+width: 846px;
+height: 53px;
+left: 224px;
+top: 400px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 48px; 
+color: #C4C4C4;
+}
+.img1{
+position: absolute;
+width: 105px;
+height: 105px;
+left: 93px;
+top: 293px;
+background: #FECB03;
+border-radius: 100px;
+}
+.img2{
+position: absolute;
+width: 105px;
+height: 105px;
+left: 93px;
+top: 427px; 
+background: #FECB03;
+border-radius: 100px;
+}
+.img3{
+position: absolute;
+width: 105px;
+height: 105px;
+left: 93px;
+top: 561px;  
+background: #FECB03;
+border-radius: 100px;
+}
+#im1{
+    height: 20px;
+    width: 20px;
+    margin-left: 16px;
+    margin-top: 12px;
+    background-color: #FECB03;
+}
+#im2{
+    height: 20px;
+    width: 20px;
+    margin-left: 16px;
+    margin-top: 12px;
+    background-color: #FECB03;
+}
+#im3{
+    height: 20px;
+    width: 20px;
+    margin-left: 16px;
+    margin-top: 12px;
+    background-color: #FECB03;
+}
+
+#clock{
+    position: absolute;
+    width: 209px;
+    height: 209px;
+    left: 800px;
+    top: 80px;
+    background: #FECB03;
+    border-radius: 1000px;
+}
+li{
+    list-style-type: none;
+}
+/* #im1,#im2,#im3{
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%; 
+background: #262626;
+} */
+
+#c3{
+position: absolute;
+width: 846px;
+height: 53px;
+left: 224px;
+top: 500px; 
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 48px;
+color: #C4C4C4;
+}
+#know-more{
+position: absolute;
+width: 260px;
+height: 107px;
+left: 800px;
+top: 450px;
+background: #FECB03;
+border-radius: 50px;
+}
+.search-bar{
+position: absolute;
+width: 597px;
+height: 53px;
+left: 319px;
+top: 33px;
+background: #262626;
+border-radius: 15px;
+}
+#explore{
+position: absolute;
+width: 131px;
+height: 53px;
+left: 1125px;
+top: 33px;
+background: #262626;
+border-radius: 15px;
+}
+#rent{
+position: absolute;
+width: 112px;
+height: 53px;
+left: 1280px;
+top: 33px;
+background: #262626;
+border-radius: 15px;
+}
+h2{
+position: absolute;
+width: 453px;
+height: 76px;
+left: 105px;
+top: 813px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 45px;
+line-height: 68px;
+color: #FFFFFF;
+}
+
+#about-heading{
+position: absolute;
+width: 335px;
+height: 53px;
+left: 105px;
+top: 178px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 48px;
+line-height: 72px;
+color: #FFFFFF;
+}
+.but {
+position: absolute;
+width: 169.44px;
+height: 58px;
+background: #FECB03;
+border-radius: 50px;
+margin-left: 10pc;
+ }
+.card1{
+box-sizing: border-box;
+border-color: white;
+position: absolute;
+width: 346px;
+height: 391px;
+left: 119px;
+top: 965px;
+color: white;
+border: 1px solid #11101054;
+border-radius: 20px
+
+}
+.card2{
+box-sizing: border-box;
+position: absolute;
+width: 346.44px;
+height: 391px;
+left: 532.36px;
+top: 965px;
+border: 1px solid #11101054;
+border-radius: 20px;
+}
+.card3{
+box-sizing: border-box;
+position: absolute;
+width: 346.44px;
+height: 391px;
+left: 943.56px;
+top: 965px;
+border: 1px solid #11101054;
+border-radius: 20px;
+}
+.card4{
+box-sizing: border-box;
+position: absolute;
+width: 346.44px;
+height: 391px;
+left: 126.55px;
+top: 1418px;
+border: 1px solid #11101054;
+border-radius: 20px;
+}
+.card5{
+box-sizing: border-box;
+position: absolute;
+width: 346.44px;
+height: 391px;
+left: 532px;
+top: 1418px;
+border: 1px solid #11101054;
+border-radius: 20px;
+}
+.card6{
+box-sizing: border-box;
+position: absolute;
+width: 346.44px;
+height: 391px;
+left: 944px;
+top: 1418px;
+border: 1px solid #11101054;
+border-radius: 20px;
+}
+footer{
+position: absolute;
+width: 1346px;
+height: 283px;
+left: 33px;
+top: 1885px;
+background: #262626;
+border-radius: 30px;
+}
+.maps{
+position: absolute;
+width: 513px;
+height: 183px;
+left: 701px;
+top: 65px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 35px;
+color: rgba(255, 255, 255, 0.8);
+}
+#site-map{
+position: absolute;
+width: 335px;
+height: 53px;
+left: 680px;
+top: 20px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 48px;
+color: #FFFFFF;
+}
+
+.social-links{
+position: absolute;
+width: 513px;
+height: 183px;
+left: 1063px;
+top: 65px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 35px;
+color: rgba(255, 255, 255, 0.8);
+}
+#info{
+position: absolute;
+width: 513px;
+height: 183px;
+left: 76px;
+top: 65px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 27px;
+color: rgba(255, 255, 255, 0.8)
+}
+.forent{
+position: absolute;
+width: 335px;
+height: 53px;
+left: 76px;
+top: 0px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 48px;
+line-height: 72px;
+color: #FFFFFF;
+}
+#s1{
+position: absolute;
+width: 335px;
+height: 53px;
+left: 1059px;
+top: 20px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 32px;
+line-height: 48px;
+color: #FFFFFF;
+}
+.cat1{
+position: absolute;
+width: 50px;
+height: 50px;
+left: 90px;
+top: 293px;
+background: #FECB03;
+border-radius: 100px;
+}
+.cat2{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 93px;
+    top: 400px;
+    background: #FECB03;
+    border-radius: 100px;
+
+}
+.cat3{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 93px;
+    top: 500px;
+    
+    background: #FECB03;
+    border-radius: 100px;
+}
+    </style>
+    <title>Contest2</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+          Forent
+        </div>
+        <div class="search-bar">
+          <input type="text" placeholder="Search">
+        </div>
+        <div class="buttons">
+          <button id="login">Login</button>
+          <button id="explore">Explore</button>
+          <button id="rent">Rent</button>
+        </div>
+      </header>
+     <section class="about-us">
+      <div id="clock">
+        
+      </div>
+      <img src="./icons/Vector (4).png" id="clock">
+          <p id="about-heading">About Us</p>
+           <div class="cat1">
+           <img src="./icons/Vector (3).png" alt="Tagline 2" id="im1">
+           </div>
+           <h2 id="c1">Rent Out Anything You Want</h2>
+           <div class="cat2">
+          <img src="./icons/Vector (2).png" alt="Tagline 2" id="im2">
+           </div>
+           <h2 id="c2">No worries about items getting lost</h2>
+           <div class="cat3">
+           <img src="./icons/Vector (1).png" alt="Tagline 2" id="im3">   
+           
+           </div>
+           <h2 id="c3">Online Payments Only</h2>
+          <button id="know-more">Know More</button>
+     </section>
+     <section class="categories">
+        <h2>Our Categories</h2>
+        <div class="card-container">
+          <div class="card1">
+            <h3>Electronics</h3> <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <br><br>
+            <button class="but">Know More</button>
+          </div>
+          <div class="card2">
+            <h3>Clothes / Apparel</h3><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <br><br>  <button class="but">Know More</button>
+          </div>
+          <div class="card3">
+            <h3>Gaming</h3><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <br><br> <button class="but">Know More</button>
+          </div>
+          <div class="card4">
+            <h3>Gaming</h3><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+            <br><br>   <button class="but">Know More</button>
+          </div>
+          <div class="card5">
+            <h3>Clothes / Apparel</h3><br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <br><br>   <button class="but">Know More</button>
+          </div>
+          <div class="card6">
+            <h3>Gaming</h3><br>
+            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <br><br>   <button class="but">Know More</button>
+          </div>
+        </div>
+      </section>
+       <footer>
+        <div class="footer-left">
+          <div class="forent">Forent</div>
+          <p id="info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+        </div>
+        <div class="footer-middle">
+          <h3 id="site-map">Site Map</h3>
+          <ul class="maps">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Search</a></li>
+            <li><a href="#">Explore</a></li>
+            <li><a href="#">Login/Signup</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <h3 id="s1">Socials</h3>
+          <ul class="social-links">
+            <li>Instagram</li>
+            <li>Facebook</li>
+            <li>Liinkedin</li>
+            <li>Twitter</li>
+          </ul>
+        </div>
+       </footer>
+
+
+
+</body>
+</html>
+  
